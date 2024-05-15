@@ -1,0 +1,9 @@
+#图片上传地址
+storage:
+  image:
+    #保存位置
+    save-path: E:/upload/
+    #允许上传的类型
+    allow-type:
+      - jpg
+      - png

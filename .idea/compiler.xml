@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="member" />
+        <module name="api" />
+        <module name="commons" />
+        <module name="picture" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-feign-order" target="17" />
+      <module name="consumer-member-nacos" target="17" />
+      <module name="consumer-order" target="17" />
+      <module name="gateway" target="17" />
+      <module name="member-nacos" target="17" />
+      <module name="nacos-config-client" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /api_v3
+
+# 日志配置
+logging:
+  level:
+    org.restart.shop: debug
+    org.springframework: warn
+# ==========applicationName + druid-mysql8 driver===================
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:4406/RestartShop?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: postgres
+    password: laj320324
+#  profiles:
+#    active: dev
+
+# ========================mybatis===================
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: org.restart.shop.entities
+  configuration:
+    map-underscore-to-camel-case: true
+# ========================zipkin===================
+#management:
+#  zipkin:
+#    tracing:
+#      endpoint: http://localhost:9411/api/v2/spans
+#  tracing:
+#    sampling:
+#      probability: 1.0 #采样率默认为0.1(0.1就是10次只能有一次被记录下来)，值越大收集越及时。
+#图片上传地址
+storage:
+  image:
+    #保存位置
+    save-path: E:/upload/
+    #允许上传的类型
+    allow-type:
+      - jpg
+      - png

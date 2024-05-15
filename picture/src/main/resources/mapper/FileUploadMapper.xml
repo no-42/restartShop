@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.restart.shop.mapper.FileUploadMapper">
+    <resultMap id="BaseResultMap" type="org.restart.shop.domain.entities.UploadFileEntity">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="local_path" jdbcType="VARCHAR" property="localPath"/>
+        <result column="file_md5" jdbcType="VARCHAR" property="fileMd5"/>
+        <result column="create_time" jdbcType="NUMERIC" property="createTime"/>
+        <result column="modify_time" jdbcType="NUMERIC" property="modifyTime"/>
+    </resultMap>
+</mapper>
